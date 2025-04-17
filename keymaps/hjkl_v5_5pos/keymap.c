@@ -38,7 +38,7 @@ enum custom_keycodes {
     KC_LGUI,    KC_A,       KC_S,       KC_D,       KC_F,       KC_G,               KC_H,           J_RCTL,         K_RSFT,       L_LALT,     SCLN_RGUI,      KC_QUOT,
     KC_TAB,     KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,               KC_N,           KC_M,           LBRC_RALT,    RBRC_SAGR,  KC_COMM,        KC_DOT,
     KC_LCTL,    KC_LALT,    KC_EQL,     KC_CAPS,    MO(1),      KC_LSFT,            LT(1, KC_SPC),  MO(1),          KC_WBAK,      KC_WFWD,    MO(2),          _______,
-    _______,    KC_ENT,     KC_BSPC,    SPC_RALT,   MO(3),      KC_DEL,             C(KC_LEFT),     C(KC_DOWN),     C(KC_UP),     C(KC_RGHT), KC_APP,         _______
+    _______,    KC_ENT,     C(KC_BSPC), SPC_RALT,   MO(3),      C(KC_DEL),          C(KC_LEFT),     KC_DOWN,        KC_UP,        C(KC_RGHT), KC_APP,         _______
 ),
 [_LAYER1] = LAYOUT(
     KC_PSCR,    KC_6,       KC_7,       KC_8,       KC_9,       KC_0,               _______,        _______,        _______,      _______,     _______,       _______,
@@ -54,7 +54,7 @@ enum custom_keycodes {
     _______,    _______,    KC_F4,      KC_F5,      KC_F6,      KC_PENT,            C(KC_C),        KC_MS_BTN1,     KC_MS_BTN3,   KC_MS_BTN2,  C(KC_W),       A(KC_TAB),
     _______,    KC_F10,     KC_F1,      KC_F2,      KC_F3,      KC_DOT,             KC_BSPC,        KC_ENT,         C(KC_V),      KC_DEL,      C(KC_X),       _______,
     _______,    _______,    KC_F11,     KC_F12,     _______,    _______,            _______,        MO(3),          C(KC_Z),      C(KC_Y),     _______,       _______,
-    _______,    _______,    C(KC_BSPC), _______,    _______,    C(KC_DEL),          _______,        _______,        _______,      _______,     _______,       _______
+    _______,    _______,    KC_BSPC,    KC_LEFT,    KC_RGHT,    KC_DEL,             _______,        _______,        _______,      _______,     _______,       _______
 ),
 [_LAYER3] = LAYOUT(
     KC_NUM,     DM_REC1,    DM_REC2,    _______,    _______,    DM_RSTP,            _______,        _______,        _______,      _______,     _______,       KC_PWR,
@@ -78,7 +78,7 @@ enum custom_keycodes {
     KC_LGUI,    KC_A,       KC_S,       KC_D,       KC_F,       KC_G,               KC_H,           KC_MS_BTN1,     KC_MS_BTN3,   KC_MS_BTN2, SCLN_RGUI,      KC_QUOT,
     KC_TAB,     KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,               KC_N,           KC_M,           LBRC_RALT,    RBRC_SAGR,  KC_COMM,        KC_DOT,
     _______,    _______,    KC_EQL,     KC_CAPS,    MO(1),      KC_LSFT,            LT(1, KC_SPC),  MO(1),          KC_WBAK,      KC_WFWD,    _______,        _______,
-    _______,    _______,    DF(0),      SPC_RALT,   KC_LCTL,    KC_LALT,            C(KC_RGHT),     KC_RALT,        C(KC_DOWN),   C(KC_UP),   C(KC_LEFT),     _______
+    _______,    DF(0),      DF(0),      SPC_RALT,   KC_LCTL,    KC_LALT,            C(KC_RGHT),     KC_RALT,        C(KC_DOWN),   C(KC_UP),   C(KC_LEFT),     _______
 )
 };
 
